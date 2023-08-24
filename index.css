@@ -1,0 +1,341 @@
+* {
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #e8e8e8;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh 7vw;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.header__title {
+    font-family: 'Tenor Sans', sans-serif;
+    font-weight: bolder;
+}
+
+.header__list {
+    display: flex;
+    justify-content: space-between;
+    width: 10vw;
+}
+
+.header__list-item {
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.header__list-item a {
+    transition: .7s;
+}
+
+.header__list-item a:hover {
+    color: #967661;
+}
+
+
+.section__one {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25vw;
+    margin-bottom: 25px;
+    gap: 50px;
+}
+
+.section__one-image {
+    border-radius: 12px;
+}
+
+.section__one-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    width: 30vw;
+}
+
+.section__one-hashtag {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 10px;
+    color: #b2b2b2;
+}
+
+.section__one-title {
+    font-family: 'Tenor Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 2vw;
+}
+
+.section__one-description {
+    color: #b2b2b2;
+}
+
+.section__one-madeBy {
+    font-family: 'Libre Franklin', sans-serif;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: smaller;
+}
+
+
+.section__two {
+    display: grid;
+    justify-content: center;
+    gap: 95px;
+    grid-template-columns: auto auto auto;
+
+}
+
+.section__two-card {
+    width: 387px;
+    height: 481px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-image {
+    width: 387px;
+    border-radius: 12px;
+}
+
+.card-hashtag {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 12px;
+    color: #b2b2b2;
+}
+
+.card-description {
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 1.2vw;
+    text-transform: uppercase;
+}
+
+.card-madeBy {
+    font-family: 'Libre Franklin', sans-serif;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: smaller;
+}
+
+.divider-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider {
+    padding: 0 20px;
+    width: 70vw;
+    border-bottom: 1px solid #ececec;
+    margin: 65px 0;
+}
+
+.section__three {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__three-header {
+    display: flex;
+    justify-content: flex-start;
+    width: 71%;
+}
+
+.section__three-cardWrapper {
+    display: grid;
+    justify-content: center;
+    gap: 95px;
+    grid-template-columns: auto auto auto;
+    margin-bottom: 65px;
+}
+
+.latest-cardWrapper {
+    display: grid;
+    justify-content: center;
+    gap: 95px;
+    grid-template-columns: auto auto auto auto;
+    margin-bottom: 65px;
+}
+
+.section__three-card {
+    width: 387px;
+    height: 481px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section__three-button {
+    background: inherit;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .7s;
+    padding: 25px 35px;
+}
+
+.section__three-button:hover {
+    background: #000000;
+    color: #FFFFFF;
+}
+
+.footer {
+    background: #141414;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__wrapper {
+    width: 72%;
+}
+
+.footer__wrapper-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20vw;
+    height: 20vh;
+}
+
+.footer__wrapper-title {
+    font-family: 'Tenor Sans', sans-serif;
+}
+
+.footer__wrapper-rights {
+    font-family: 'Libre Franklin', sans-serif;
+    color: #888888;
+    font-size: 11px;
+}
+
+.footer__divider-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__divider {
+    padding: 0 20px;
+    width: 70vw;
+    border-bottom: 1px solid #ececec;
+    margin-bottom: 25px;
+}
+
+.categories__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.categories {
+    margin-bottom: 50px;
+}
+
+.categories__header {
+    font-family: 'Libre Franklin', sans-serif;
+    color: #989898;
+}
+
+.categories__list {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-row-gap: 30px;
+    grid-column-gap: 150px;
+    padding: 0;
+}
+
+.categories__list-item {
+    font-family: 'Libre Franklin', sans-serif;
+    color: inherit;
+}
+
+.subscribe__form-title {
+    font-family: 'Libre Franklin', sans-serif;
+    color: #888888;
+}
+
+.footer__info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+    width: 40vw;
+    gap: 100px;
+}
+
+.footer__info-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer__info-wrapper h4 {
+    font-family: 'Libre Franklin', sans-serif;
+    color: #989898;
+}
+
+.form__wrapper-input {
+    font-family: 'Libre Franklin', sans-serif;
+    padding: 10px 20px;
+    color: #000000;
+}
+
+.form__wrapper-input:focus {
+    outline: none;
+}
+
+.form__wrapper-button {
+    font-family: 'Libre Franklin', sans-serif;
+    background: #000000;
+    color: #FFFFFF;
+    padding: 13px 15px;
+    border: none;
+    cursor: pointer;
+    transition: all .14s ease-in-out;
+}
+
+.form__wrapper-button:active {
+    background: #2f2f2f;
+    color: #FFFFFF;
+}
+
+.footer__info-wrapper ul {
+    padding: 0;
+}
+
+.footer__info-wrapper ul li {
+    font-family: 'Libre Franklin', sans-serif;
+    margin-bottom: 20px;
+}
+
